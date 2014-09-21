@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/layBienvAlum"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/tvWellcomeAlumno"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:textColor="#99CCFF"
+            android:fontFamily="consolas"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_weight=".5"
+            android:text="Bienvenido, " />
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:src="@drawable/sol_lite" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layControles2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/layBienvAlum"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnObtener"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/button_shape2"
+                android:fontFamily="tahoma"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Obtener notas"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layOutput"
+        android:layout_below="@+id/layControles2"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/layPiso"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" >
+            <HorizontalScrollView
+                android:id="@+id/hscrll1"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout1"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <TableLayout
+                        android:id="@+id/table_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                    </TableLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layPiso"
+        android:background="@layout/repetir_footer_grass"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reporta</string>
+    <string name="title_section1">Registrarse</string>
+    <string name="title_section2">Mis denuncias</string>
+    <string name="title_section3">Procedimientos</string>
+    <string name="navigation_drawer_open">Abrir drawer</string>
+    <string name="navigation_drawer_close">Cerrar drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="titulo">Sistema movil de registro de denuncias</string>
+    <string name="descripcion">El presente aplicativo permite al usuario realizar una denuncia sobre un hecho delictivo</string>
+    <string name="dni">DNI:</string>
+
+</resources>

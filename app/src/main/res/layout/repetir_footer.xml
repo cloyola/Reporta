@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+        android:src="@drawable/repeat_bg2"
+    	android:tileMode="repeat"
+        android:layout_height="72dp"
+        android:layout_width="250dp">
+</Bitmap>
